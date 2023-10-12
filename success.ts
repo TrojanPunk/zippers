@@ -1,4 +1,4 @@
 function redirect() {
     localStorage.removeItem('cart');
-    window.location.href = "homepage.html";
+    window.location.href = "index.html";
 }

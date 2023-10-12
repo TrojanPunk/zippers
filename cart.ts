@@ -188,4 +188,3 @@ function increaseQuantity(productId) {
     calculateTotalPrice();
     grandPrice();
 }
-
