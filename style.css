@@ -1,0 +1,48 @@
+/* Navbar section */
+* {
+    font-family: 'Poppins', sans-serif;
+    background: #141414;
+}
+
+html {
+    background: #141414;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    color: #C0EA88;
+}
+
+.navbar {
+    background: #000000;
+}
+
+.nav-item {
+    border: 1px solid #C0EA88;
+    padding: 2px 20px;
+    border-radius: 20px;
+    gap: 40px;
+    font-size: 12px;
+}
+
+.nav-item:hover {
+    background-color: #C0EA88;
+    color: #000000;
+}
+
+.navbar-nav.mx-auto.d-flex {
+    gap: 20px;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}

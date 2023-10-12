@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand" style="color: #C0EA88;" href="homepage.html">ZIPPERS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex">
+                    <li class="nav-item px">
+                        <a class="nav-link" href="homepage.html" id="categoryAll">All</a>
+                    </li>
+                    <li class="nav-item px">
+                        <a class="nav-link" href="homepage.html" id="categoryMens">Men's Clothing</a>
+                    </li>
+                    <li class="nav-item px">
+                        <a class="nav-link" href="homepage.html" id="categoryWomens">Women's Clothing</a>
+                    </li>
+                    <li class="nav-item px">
+                        <a class="nav-link" href="homepage.html" id="categoryHardware">Electronics</a>
+                    </li>
+                </ul>
+                <div class="navbar-text">
+                    <a class="material-symbols-outlined" href="cart.html">
+                        shopping_cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="order-summary">Order Details</h1>
+    <hr />
+
+    <h3 id="empty-cart">
+    </h3>
+
+    <div id="cart-items">
+    </div>
+
+    <table class="table table-borderless" id="summary-table">
+        <thead>
+            <tr>
+                <th scope="col" colspan="12" id="summary">Order Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="total-price-title">Total Price</th>
+                <td id="total-price" class="price-value"></td>
+            </tr>
+            <tr>
+            <tr>
+                <th scope="row" class="delivery-title">Delivery Charges</th>
+                <td class="price-value" id="disc-icons">$<span id="delivery">10.80</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="offer-title">Seasonal offer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 118 118" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M67.9627 3.87545C66.7645 2.64872 65.3332 1.67393 63.7529 1.00839C62.1726 0.342849 60.4751 0 58.7604 0C57.0456 0 55.3481 0.342849 53.7678 1.00839C52.1875 1.67393 50.7562 2.64872 49.558 3.87545L43.905 9.66363C42.6892 10.9095 41.2332 11.8956 39.6252 12.5622C38.0171 13.2289 36.2905 13.5622 34.5499 13.542L26.4582 13.4421C24.7432 13.4216 23.0414 13.7443 21.453 14.3912C19.8646 15.038 18.4215 15.996 17.2088 17.2088C15.996 18.4215 15.038 19.8646 14.3912 21.453C13.7443 23.0414 13.4216 24.7432 13.4421 26.4582L13.5361 34.5499C13.5563 36.2905 13.223 38.0171 12.5563 39.6252C11.8897 41.2332 10.9036 42.6892 9.65776 43.905L3.87545 49.558C2.64872 50.7562 1.67393 52.1875 1.00839 53.7678C0.342849 55.3481 0 57.0456 0 58.7604C0 60.4751 0.342849 62.1726 1.00839 63.7529C1.67393 65.3332 2.64872 66.7645 3.87545 67.9627L9.66363 73.6157C12.1787 76.072 13.5831 79.4568 13.542 82.9708L13.4421 91.0625C13.4216 92.7775 13.7443 94.4793 14.3912 96.0677C15.038 97.6561 15.996 99.0992 17.2088 100.312C18.4215 101.525 19.8646 102.483 21.453 103.13C23.0414 103.776 24.7432 104.099 26.4582 104.079L34.5499 103.985C36.2905 103.964 38.0171 104.298 39.6252 104.964C41.2332 105.631 42.6892 106.617 43.905 107.863L49.558 113.645C54.6058 118.816 62.9149 118.816 67.9627 113.645L73.6157 107.857C74.8315 106.611 76.2875 105.625 77.8955 104.959C79.5036 104.292 81.2302 103.959 82.9708 103.979L91.0625 104.079C92.7775 104.099 94.4793 103.776 96.0677 103.13C97.6561 102.483 99.0992 101.525 100.312 100.312C101.525 99.0992 102.483 97.6561 103.13 96.0677C103.776 94.4793 104.099 92.7775 104.079 91.0625L103.985 82.9708C103.964 81.2302 104.298 79.5036 104.964 77.8955C105.631 76.2875 106.617 74.8315 107.863 73.6157L113.645 67.9627C118.816 62.9149 118.816 54.6058 113.645 49.558L107.857 43.905C106.611 42.6892 105.625 41.2332 104.959 39.6252C104.292 38.0171 103.959 36.2905 103.979 34.5499L104.079 26.4582C104.099 24.7432 103.776 23.0414 103.13 21.453C102.483 19.8646 101.525 18.4215 100.312 17.2088C99.0992 15.996 97.6561 15.038 96.0677 14.3912C94.4793 13.7443 92.7775 13.4216 91.0625 13.4421L82.9708 13.5361C81.2302 13.5563 79.5036 13.223 77.8955 12.5563C76.2875 11.8897 74.8315 10.9036 73.6157 9.65776L67.9627 3.87545ZM41.1314 49.9459C42.2889 49.9459 43.4351 49.7179 44.5045 49.2749C45.574 48.8319 46.5457 48.1827 47.3642 47.3642C48.1827 46.5457 48.8319 45.574 49.2749 44.5045C49.7179 43.4351 49.9459 42.2889 49.9459 41.1314C49.9459 39.9738 49.7179 38.8276 49.2749 37.7582C48.8319 36.6888 48.1827 35.7171 47.3642 34.8986C46.5457 34.0801 45.574 33.4308 44.5045 32.9878C43.4351 32.5449 42.2889 32.3169 41.1314 32.3169C38.7936 32.3169 36.5516 33.2455 34.8986 34.8986C33.2455 36.5516 32.3169 38.7936 32.3169 41.1314C32.3169 43.4691 33.2455 45.7111 34.8986 47.3642C36.5516 49.0172 38.7936 49.9459 41.1314 49.9459ZM76.3893 85.2038C78.7271 85.2038 80.9691 84.2752 82.6221 82.6221C84.2752 80.9691 85.2038 78.7271 85.2038 76.3893C85.2038 74.0516 84.2752 71.8096 82.6221 70.1566C80.9691 68.5035 78.7271 67.5748 76.3893 67.5748C74.0516 67.5748 71.8096 68.5035 70.1566 70.1566C68.5035 71.8096 67.5748 74.0516 67.5748 76.3893C67.5748 78.7271 68.5035 80.9691 70.1566 82.6221C71.8096 84.2752 74.0516 85.2038 76.3893 85.2038ZM80.9611 36.5596C81.5617 37.1599 82.0381 37.8726 82.3631 38.657C82.6882 39.4415 82.8554 40.2823 82.8554 41.1314C82.8554 41.9805 82.6882 42.8213 82.3631 43.6057C82.0381 44.3902 81.5617 45.1029 80.9611 45.7032L45.7032 80.9611C44.4906 82.1736 42.8461 82.8548 41.1314 82.8548C39.4166 82.8548 37.7721 82.1736 36.5596 80.9611C35.3471 79.7486 34.6659 78.1041 34.6659 76.3893C34.6659 74.6746 35.3471 73.0301 36.5596 71.8176L71.8176 36.5596C72.4178 35.959 73.1305 35.4826 73.915 35.1576C74.6994 34.8326 75.5402 34.6653 76.3893 34.6653C77.2385 34.6653 78.0792 34.8326 78.8637 35.1576C79.6481 35.4826 80.3608 35.959 80.9611 36.5596Z"
+                            fill="#59ACFF" />
+                    </svg>
+                </th>
+                <td class="price-value" id="offer-price">-$<span id="offer">32.45</span></td>
+            </tr>
+            <tr class="grand-total-row">
+                <th scope="row" class="grand-price-title">Grand Total</th>
+                <td class="price-value">$<span id="grand">32.45</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="checkout-section">
+        <a id="proceed-to-checkout" href="checkout.html">
+            <button class="btn btn-primary" id="checkout-button">
+                Proceed to Checkout
+            </button>
+        </a>
+    </div>
+    <script src="cart.js" defer></script>
+</body>
+
+</html>
